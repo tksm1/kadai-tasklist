@@ -1,6 +1,6 @@
 class TasksController < ApplicationController
   def index
-    @pagy, @tasks = pagy(Task.all)
+    @pagy, @tasks = pagy(Task.all, items: 3)
   end
 
   def show
